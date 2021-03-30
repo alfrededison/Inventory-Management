@@ -41,13 +41,13 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <router-view/>
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+import EssentialLink from 'components/EssentialLink.vue';
 
 const linksData = [
   {
@@ -96,12 +96,12 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink },
-  data () {
+  components: {EssentialLink},
+  data() {
     return {
       leftDrawerOpen: false,
       essentialLinks: linksData
-    }
+    };
   }
-}
+};
 </script>
