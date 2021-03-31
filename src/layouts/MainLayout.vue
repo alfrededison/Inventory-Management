@@ -15,14 +15,14 @@
         <div class="text-h3">{{ $t('title') }}</div>
         <div class="text-subtitle1">{{ this.todayDate }}</div>
       </div>
-      <q-img src="~assets/images/storage.jpg" class="header-image absolute-top"/>
+      <q-img class="header-image absolute-top" src="~assets/images/storage.jpg"/>
     </q-header>
 
     <q-drawer
       v-model="leftDrawerOpen"
-      show-if-above
-      :width="250"
       :breakpoint="600"
+      :width="250"
+      show-if-above
     >
       <q-scroll-area style="height: calc(100% - 192px); margin-top: 192px; border-right: 1px solid #ddd">
         <q-list padding>
@@ -30,10 +30,10 @@
             <q-item-section>
               <q-select
                 v-model="lang"
-                :options="langOptions"
                 :label="$t('drawer.language')"
-                dense
+                :options="langOptions"
                 borderless
+                dense
                 emit-value
                 map-options
                 options-dense
@@ -42,7 +42,7 @@
             </q-item-section>
           </q-item>
 
-          <q-item to="/" exact clickable v-ripple>
+          <q-item v-ripple clickable exact to="/">
             <q-item-section avatar>
               <q-icon name="home"/>
             </q-item-section>
@@ -52,7 +52,7 @@
             </q-item-section>
           </q-item>
 
-          <q-item to="/help" exact clickable v-ripple>
+          <q-item v-ripple clickable exact to="/help">
             <q-item-section avatar>
               <q-icon name="help"/>
             </q-item-section>
@@ -67,8 +67,8 @@
 
       <q-img class="absolute-top" src="~assets/images/storage.jpg" style="height: 192px">
         <div class="absolute-bottom bg-transparent">
-          <q-avatar size="56px" class="q-mb-sm">
-            <q-img src="~assets/icon.png" class="avatar"/>
+          <q-avatar class="q-mb-sm" size="56px">
+            <q-img class="avatar" src="~assets/icon.png"/>
           </q-avatar>
           <div class="text-weight-bold text-shadowed">{{ $t('defaults.admin') }}</div>
           <div class="text-shadowed">@admin</div>
@@ -134,9 +134,11 @@ export default {
   opacity: 0.2;
   filter: grayscale(100%)
 }
+
 .avatar {
   background-color: $primary;
 }
+
 .text-shadowed {
   text-shadow: 0 0 5px $primary, 0 0 7px $accent;
 }
