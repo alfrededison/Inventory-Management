@@ -111,6 +111,7 @@ export default {
   watch: {
     lang(lang) {
       this.$i18n.locale = lang;
+      localStorage.setItem('lang', lang);
       import(
         /* webpackInclude: /(en-us|vi)\.js$/ */
       'quasar/lang/' + lang

@@ -6,10 +6,11 @@ import VueI18n from 'vue-i18n';
 Vue.use(VueI18n);
 
 const defaultLocale = Quasar.lang.getLocale();
-console.log(defaultLocale);
+const userLocale = localStorage.getItem('lang');
+console.log('locale', userLocale, defaultLocale);
 
 const i18n = new VueI18n({
-  locale: defaultLocale,
+  locale: userLocale || defaultLocale,
   fallbackLocale: 'en-us',
   messages
 });
