@@ -68,7 +68,7 @@
       <q-img class="absolute-top" src="~assets/images/storage.jpg" style="height: 192px">
         <div class="absolute-bottom bg-transparent">
           <q-avatar size="56px" class="q-mb-sm">
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <q-img src="~assets/icon.png" class="avatar"/>
           </q-avatar>
           <div class="text-weight-bold text-shadowed">{{ $t('defaults.admin') }}</div>
           <div class="text-shadowed">@admin</div>
@@ -133,6 +133,9 @@ export default {
   z-index: -1;
   opacity: 0.2;
   filter: grayscale(100%)
+}
+.avatar {
+  background-color: $primary;
 }
 .text-shadowed {
   text-shadow: 0 0 5px $primary, 0 0 7px $accent;
