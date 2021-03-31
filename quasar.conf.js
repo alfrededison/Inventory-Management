@@ -21,6 +21,7 @@ module.exports = function (/* ctx */) {
     // https://v1.quasar.dev/quasar-cli/boot-files
     boot: [
       'i18n',
+      'quasar-lang-pack',
       'axios',
     ],
 
