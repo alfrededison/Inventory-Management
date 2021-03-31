@@ -1,0 +1,11 @@
+{
+  "params": {
+    "icon": "./src/assets/icon.png",
+    "include": ["all"],
+    "quality": 7,
+    "themeColor": "dd7f2d",
+    "splashscreenColor": "dd7f2d",
+    "svgColor": "dd7f2d"
+  },
+  "assets": []
+}

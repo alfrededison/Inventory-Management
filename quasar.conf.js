@@ -115,7 +115,7 @@ module.exports = function (/* ctx */) {
       workboxOptions: {}, // only for GenerateSW
       manifest: {
         name: `Inventory Manager`,
-        short_name: `Inventory Manager`,
+        short_name: `Inventory-Manager`,
         description: `A cross-platform inventory manager`,
         display: 'standalone',
         orientation: 'portrait',
@@ -148,7 +148,18 @@ module.exports = function (/* ctx */) {
             type: 'image/png'
           }
         ]
-      }
+      },
+      metaVariables: {
+        appleMobileWebAppCapable: 'yes',
+        appleMobileWebAppStatusBarStyle: 'default',
+        appleTouchIcon120: 'icons/apple-icon-120x120.png',
+        appleTouchIcon152: 'icons/apple-icon-152x152.png',
+        appleTouchIcon167: 'icons/apple-icon-167x167.png',
+        appleTouchIcon180: 'icons/apple-icon-180x180.png',
+        appleSafariPinnedTab: 'icons/safari-pinned-tab.svg',
+        msapplicationTileImage: 'icons/ms-icon-144x144.png',
+        msapplicationTileColor: '#dd7f2d'
+      },
     },
 
     // Full list of options: https://v1.quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
