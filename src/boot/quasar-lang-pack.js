@@ -1,8 +1,9 @@
 import Quasar from 'quasar';
 
-export default async () => {
+export default async ({ ssrContext }) => {
+  const isSSR = !!ssrContext;
   const defaultLocale = Quasar.lang.getLocale();
-  const userLocale = localStorage.getItem('lang');
+  const userLocale = !isSSR && localStorage.getItem('lang');
   const langIso = userLocale || defaultLocale;
 
   try {
