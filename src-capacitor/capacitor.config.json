@@ -1,0 +1,7 @@
+{
+  "appId": "com.hieund.inventorymanager",
+  "appName": "Inventory Manager",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "www"
+}

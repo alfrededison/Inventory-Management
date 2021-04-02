@@ -1,0 +1,11 @@
+{
+  "name": "inventory-manager",
+  "version": "0.0.1",
+  "description": "A cross-platform inventory manager",
+  "author": "Hieu Nguyen<isaactesla@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/cli": "^2.0.0",
+    "@capacitor/core": "^2.0.0"
+  }
+}
