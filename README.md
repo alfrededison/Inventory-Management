@@ -20,6 +20,11 @@ quasar dev
 yarn run lint
 ```
 
+### Generate icon
+```bash
+icongenie generate -p icon-profile.json
+```
+
 ### Build the app for production
 
 ```bash
