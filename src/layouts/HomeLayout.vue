@@ -93,7 +93,7 @@ const appLanguages = languages.filter(lang =>
 );
 
 export default {
-  name: 'MainLayout',
+  name: 'HomeLayout',
   data() {
     return {
       leftDrawerOpen: false,
