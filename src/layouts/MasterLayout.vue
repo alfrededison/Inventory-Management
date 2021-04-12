@@ -30,7 +30,7 @@
         <div class="q-pl-md q-gutter-sm row no-wrap items-center">
           <q-btn round dense flat color="grey-8" icon="notifications">
             <q-badge color="red" text-color="white" floating>
-              2
+              {{ notificationCount }}
             </q-badge>
             <q-tooltip>{{ $t('toolbar.notification') }}</q-tooltip>
           </q-btn>
@@ -74,6 +74,7 @@ export default {
     return {
       leftDrawerOpen: false,
       search: '',
+      notificationCount: 3
     };
   },
 };
