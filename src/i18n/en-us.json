@@ -17,7 +17,28 @@
     "language": "Language"
   },
   "toolbar": {
+    "delete": "Delete",
+    "detail": "Detail",
+    "edit": "Edit",
+    "exportExcel": "Export to Excel file",
+    "history": "History",
+    "importExcel": "Import from Excel file",
+    "more": "More menu",
     "notification": "Notification",
     "search": "Search"
+  },
+  "products": {
+    "add": "Add product",
+    "category": "Category",
+    "image": "Image",
+    "list": "Product list",
+    "name": "Product Name",
+    "quantity": "Quantity",
+    "quantityLocation": "{quantity} | {quantity} in {location} location | {quantity} in {location} locations",
+    "sku": "SKU"
+  },
+  "actions": {
+    "actions": "Actions",
+    "deleteSelected": "Delete selected"
   }
 }

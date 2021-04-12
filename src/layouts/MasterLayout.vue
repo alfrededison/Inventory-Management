@@ -105,5 +105,18 @@ export default {
     max-width: 60px;
     width: 100%;
   }
+
+  &__page-with-sticky {
+    padding-top: 66px;
+  }
+
+  &__sticky {
+    min-height: 49px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  &__sticky-button {
+    border: 1px solid #cccccc;
+  }
 }
 </style>

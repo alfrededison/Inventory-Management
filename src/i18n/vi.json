@@ -17,7 +17,28 @@
     "language": "Ngôn ngữ"
   },
   "toolbar": {
+    "delete": "Xóa",
+    "detail": "Chi tiết",
+    "edit": "Chỉnh sửa",
+    "exportExcel": "Xuất ra file Excel",
+    "history": "Lịch sử",
+    "importExcel": "Nhập dữ liệu từ file Excel",
+    "more": "Menu mở rộng",
     "notification": "Thông báo",
     "search": "Tìm kiếm"
+  },
+  "products": {
+    "add": "Thêm sản phẩm",
+    "category": "Phân loại",
+    "image": "Ảnh",
+    "list": "Danh mục sản phẩm",
+    "name": "Tên sản phẩm",
+    "quantity": "Số lượng",
+    "quantityLocation": "{quantity} | {quantity} ở {location} địa điểm | {quantity} ở {location} địa điểm",
+    "sku": "Mã sản phẩm"
+  },
+  "actions": {
+    "actions": "Thao tác",
+    "deleteSelected": "Xóa các mục được chọn"
   }
 }
