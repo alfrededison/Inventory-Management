@@ -25,44 +25,7 @@
       show-if-above
     >
       <q-scroll-area style="height: calc(100% - 192px); margin-top: 192px; border-right: 1px solid #ddd">
-        <q-list padding>
-          <q-item v-ripple>
-            <q-item-section>
-              <q-select
-                v-model="lang"
-                :label="$t('drawer.language')"
-                :options="langOptions"
-                borderless
-                dense
-                emit-value
-                map-options
-                options-dense
-                style="min-width: 192px"
-              />
-            </q-item-section>
-          </q-item>
-
-          <q-item v-ripple clickable exact to="/">
-            <q-item-section avatar>
-              <q-icon name="home"/>
-            </q-item-section>
-
-            <q-item-section>
-              {{ $t('pages.dashboard') }}
-            </q-item-section>
-          </q-item>
-
-          <q-item v-ripple clickable exact to="/help">
-            <q-item-section avatar>
-              <q-icon name="help"/>
-            </q-item-section>
-
-            <q-item-section>
-              {{ $t('pages.help') }}
-            </q-item-section>
-          </q-item>
-
-        </q-list>
+        <Menu/>
       </q-scroll-area>
 
       <q-img class="absolute-top" src="~assets/images/storage.jpg" style="height: 192px">
@@ -86,20 +49,17 @@
 
 <script>
 import {date} from 'quasar';
-import languages from 'quasar/lang/index.json';
-
-const appLanguages = languages.filter(lang =>
-  ['en-us', 'vi'].includes(lang.isoName)
-);
+import Menu from 'components/menu';
 
 export default {
   name: 'HomeLayout',
   data() {
     return {
       leftDrawerOpen: false,
-      lang: this.$i18n.locale,
-      langOptions: [],
     };
+  },
+  components: {
+    Menu,
   },
   computed: {
     todayDate() {
@@ -107,23 +67,6 @@ export default {
       let timestamp = Date.now();
       return date.formatDate(timestamp, 'dddd, D MMMM YYYY');
     }
-  },
-  watch: {
-    lang(lang) {
-      this.$i18n.locale = lang;
-      localStorage.setItem('lang', lang);
-      import(
-        /* webpackInclude: /(en-us|vi)\.js$/ */
-      'quasar/lang/' + lang
-        ).then(lang => {
-        this.$q.lang.set(lang.default);
-      });
-    }
-  },
-  created() {
-    this.langOptions = appLanguages.map(lang => ({
-      label: lang.nativeName, value: lang.isoName
-    }));
   },
 };
 </script>
