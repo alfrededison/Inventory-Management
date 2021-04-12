@@ -15,7 +15,7 @@
         <div class="text-h3">{{ $t('title') }}</div>
         <div class="text-subtitle1">{{ this.todayDate }}</div>
       </div>
-      <q-img class="header-image absolute-top" src="~assets/images/storage.jpg"/>
+      <q-img class="IM__header-image absolute-top" src="~assets/images/storage.jpg"/>
     </q-header>
 
     <q-drawer
@@ -31,10 +31,10 @@
       <q-img class="absolute-top" src="~assets/images/storage.jpg" style="height: 192px">
         <div class="absolute-bottom bg-transparent">
           <q-avatar class="q-mb-sm" size="56px">
-            <q-img class="avatar" src="~assets/icon.png"/>
+            <q-img class="IM__menu-avatar" src="~assets/icon.png"/>
           </q-avatar>
-          <div class="text-weight-bold text-shadowed">{{ $t('defaults.admin') }}</div>
-          <div class="text-shadowed">@admin</div>
+          <div class="text-weight-bold IM__text-shadowed">{{ $t('defaults.admin') }}</div>
+          <div class="IM__text-shadowed">@admin</div>
         </div>
       </q-img>
     </q-drawer>
@@ -72,18 +72,20 @@ export default {
 </script>
 
 <style lang="scss">
-.header-image {
-  height: 100%;
-  z-index: -1;
-  opacity: 0.2;
-  filter: grayscale(100%)
-}
+.IM {
+  &__header-image {
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    filter: grayscale(100%)
+  }
 
-.avatar {
-  background-color: $primary;
-}
+  &__menu-avatar {
+    background-color: $primary;
+  }
 
-.text-shadowed {
-  text-shadow: 0 0 5px $primary, 0 0 7px $accent;
+  &__text-shadowed {
+    text-shadow: 0 0 5px $primary, 0 0 7px $accent;
+  }
 }
 </style>
