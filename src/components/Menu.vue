@@ -26,6 +26,66 @@
       </q-item-section>
     </q-item>
 
+    <q-item v-ripple clickable to="/products">
+      <q-item-section avatar>
+        <q-icon name="category"/>
+      </q-item-section>
+
+      <q-item-section>
+        {{ $t('pages.products') }}
+      </q-item-section>
+    </q-item>
+
+    <q-item v-ripple clickable to="/inventory">
+      <q-item-section avatar>
+        <q-icon name="store"/>
+      </q-item-section>
+
+      <q-item-section>
+        {{ $t('pages.inventory') }}
+      </q-item-section>
+    </q-item>
+
+    <q-item v-ripple clickable to="/locations">
+      <q-item-section avatar>
+        <q-icon name="place"/>
+      </q-item-section>
+
+      <q-item-section>
+        {{ $t('pages.locations') }}
+      </q-item-section>
+    </q-item>
+
+    <q-item v-ripple clickable to="/purchases">
+      <q-item-section avatar>
+        <q-icon name="shop"/>
+      </q-item-section>
+
+      <q-item-section>
+        {{ $t('pages.purchases') }}
+      </q-item-section>
+    </q-item>
+
+    <q-item v-ripple clickable to="/customers">
+      <q-item-section avatar>
+        <q-icon name="people"/>
+      </q-item-section>
+
+      <q-item-section>
+        {{ $t('pages.customers') }}
+      </q-item-section>
+    </q-item>
+
+    <q-item v-ripple clickable to="/sales">
+      <q-item-section avatar>
+        <q-icon name="shopping_cart"/>
+      </q-item-section>
+
+      <q-item-section>
+        {{ $t('pages.sales') }}
+      </q-item-section>
+    </q-item>
+
     <q-item v-ripple clickable exact to="/help">
       <q-item-section avatar>
         <q-icon name="help"/>
