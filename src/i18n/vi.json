@@ -40,5 +40,17 @@
   "actions": {
     "actions": "Thao tác",
     "deleteSelected": "Xóa các mục được chọn"
+  },
+  "inventory": {
+    "add": "Thêm kho hàng",
+    "addRecord": "Thêm bản ghi kho hàng",
+    "lastTransaction": "Giao dịch cuối",
+    "list": "Danh sách kho hàng",
+    "location": "Địa điểm",
+    "productView": "Xem sản phẩm",
+    "transaction": "Xuất/Nhập kho",
+    "transactionHistory": "Lịch sử kho hàng",
+    "transfer": "Luân chuyển kho hàng",
+    "updateQuantity": "Cập nhật số lượng"
   }
 }

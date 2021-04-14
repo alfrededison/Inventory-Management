@@ -40,5 +40,17 @@
   "actions": {
     "actions": "Actions",
     "deleteSelected": "Delete selected"
+  },
+  "inventory": {
+    "add": "Add inventory location",
+    "addRecord": "Add inventory record",
+    "lastTransaction": "Last transaction",
+    "list": "Inventory List",
+    "location": "Location",
+    "productView": "Product detail",
+    "transaction": "Issue/Receive",
+    "transactionHistory": "Transaction history",
+    "transfer": "Location transfer",
+    "updateQuantity": "Update quantity"
   }
 }
