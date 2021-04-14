@@ -39,7 +39,9 @@
   },
   "actions": {
     "actions": "Actions",
-    "deleteSelected": "Delete selected"
+    "cancel": "Cancel",
+    "deleteSelected": "Delete selected",
+    "save": "Save"
   },
   "inventory": {
     "add": "Add inventory location",

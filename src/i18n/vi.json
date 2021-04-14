@@ -39,7 +39,9 @@
   },
   "actions": {
     "actions": "Thao tác",
-    "deleteSelected": "Xóa các mục được chọn"
+    "cancel": "Hủy bỏ",
+    "deleteSelected": "Xóa các mục được chọn",
+    "save": "Lưu lại"
   },
   "inventory": {
     "add": "Thêm kho hàng",
