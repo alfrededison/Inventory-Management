@@ -30,17 +30,24 @@
   "products": {
     "add": "Add product",
     "category": "Category",
+    "description": "Description",
+    "edit": "Edit product {name}",
     "image": "Image",
     "list": "Product list",
     "name": "Product Name",
+    "price": "Price",
     "quantity": "Quantity",
     "quantityLocation": "{quantity} | {quantity} in {location} location | {quantity} in {location} locations",
+    "reorderPoint": "Reorder point",
+    "salePrice": "Sale price",
     "sku": "SKU"
   },
   "actions": {
     "actions": "Actions",
     "cancel": "Cancel",
+    "clickToAddOption": "Click Plus(+) button to add more option",
     "deleteSelected": "Delete selected",
+    "reset": "Reset",
     "save": "Save"
   },
   "inventory": {

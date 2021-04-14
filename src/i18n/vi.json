@@ -30,17 +30,24 @@
   "products": {
     "add": "Thêm sản phẩm",
     "category": "Phân loại",
+    "description": "Mô tả",
+    "edit": "Chỉnh sửa sản phẩm {name}",
     "image": "Ảnh",
     "list": "Danh mục sản phẩm",
     "name": "Tên sản phẩm",
+    "price": "Giá nhập",
     "quantity": "Số lượng",
     "quantityLocation": "{quantity} | {quantity} ở {location} địa điểm | {quantity} ở {location} địa điểm",
+    "reorderPoint": "Mốc cảnh báo",
+    "salePrice": "Giá bán",
     "sku": "Mã sản phẩm"
   },
   "actions": {
     "actions": "Thao tác",
     "cancel": "Hủy bỏ",
+    "clickToAddOption": "Bấm dấu cộng (+) để thêm lựa chọn",
     "deleteSelected": "Xóa các mục được chọn",
+    "reset": "Reset",
     "save": "Lưu lại"
   },
   "inventory": {
