@@ -28,15 +28,15 @@
           <q-btn icon="more_horiz" dense flat size="12px">
             <q-menu anchor="bottom right" self="top right">
               <q-list style="min-width: 100px">
-                <q-item clickable v-close-popup to="/products/show">
+                <q-item clickable v-close-popup :to="{name: 'product_show'}">
                   <q-icon name="zoom_in" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('toolbar.detail') }}</q-item-section>
                 </q-item>
-                <q-item clickable v-close-popup to="/products/edit">
+                <q-item clickable v-close-popup :to="{name: 'product_edit'}">
                   <q-icon name="edit" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('toolbar.edit') }}</q-item-section>
                 </q-item>
-                <q-item clickable v-close-popup to="/products/history">
+                <q-item clickable v-close-popup :to="{name: 'product_history'}">
                   <q-icon name="history" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('toolbar.history') }}</q-item-section>
                 </q-item>
@@ -57,7 +57,7 @@
           <span>{{ $t('products.list') }}</span>
         </q-toolbar-title>
         <q-space/>
-        <q-btn icon="add" dense flat class="IM__sticky-button" size="12px" color="primary" to="/products/add">
+        <q-btn icon="add" dense flat class="IM__sticky-button" size="12px" color="primary" :to="{name: 'product_add'}">
           <span v-if="$q.screen.gt.xs">{{ $t('products.add') }}</span>
         </q-btn>
         <q-btn icon="more_vert" dense flat class="IM__sticky-button q-ml-md" size="12px">

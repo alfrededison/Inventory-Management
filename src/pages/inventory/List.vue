@@ -28,28 +28,28 @@
           <q-btn icon="more_horiz" dense flat size="12px">
             <q-menu anchor="bottom right" self="top right">
               <q-list style="min-width: 100px">
-                <q-item clickable v-close-popup to="/inventory/quantity">
+                <q-item clickable v-close-popup :to="{name: 'inventory_quantity'}">
                   <q-icon name="inventory" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('inventory.updateQuantity') }}</q-item-section>
                 </q-item>
-                <q-item clickable v-close-popup to="/inventory/transaction">
+                <q-item clickable v-close-popup :to="{name: 'inventory_transaction'}">
                   <q-icon name="import_export" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('inventory.transaction') }}</q-item-section>
                 </q-item>
-                <q-item clickable v-close-popup to="/inventory/transfer">
+                <q-item clickable v-close-popup :to="{name: 'inventory_transfer'}">
                   <q-icon name="local_shipping" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('inventory.transfer') }}</q-item-section>
                 </q-item>
-                <q-item clickable v-close-popup to="/products/show">
+                <q-item clickable v-close-popup :to="{name: 'product_show'}">
                   <q-icon name="manage_search" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('inventory.productView') }}</q-item-section>
                 </q-item>
                 <q-separator/>
-                <q-item clickable v-close-popup to="/inventory/transaction-history">
+                <q-item clickable v-close-popup :to="{name: 'inventory_history'}">
                   <q-icon name="history" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('inventory.transactionHistory') }}</q-item-section>
                 </q-item>
-                <q-item clickable v-close-popup to="/inventory/add-record">
+                <q-item clickable v-close-popup :to="{name: 'inventory_add_record'}">
                   <q-icon name="change_history" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('inventory.addRecord') }}</q-item-section>
                 </q-item>
@@ -70,7 +70,7 @@
           <span>{{ $t('inventory.list') }}</span>
         </q-toolbar-title>
         <q-space/>
-        <q-btn icon="add" dense flat class="IM__sticky-button" size="12px" color="primary" to="/inventory/add">
+        <q-btn icon="add" dense flat class="IM__sticky-button" size="12px" color="primary" :to="{name: 'inventory_add'}">
           <span v-if="$q.screen.gt.xs">{{ $t('inventory.add') }}</span>
         </q-btn>
         <q-btn icon="more_vert" dense flat class="IM__sticky-button q-ml-md" size="12px">

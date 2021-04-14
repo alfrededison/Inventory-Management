@@ -16,7 +16,7 @@
       </q-item-section>
     </q-item>
 
-    <q-item v-ripple clickable exact to="/">
+    <q-item v-ripple clickable exact :to="{name: 'home'}">
       <q-item-section avatar>
         <q-icon name="home"/>
       </q-item-section>
@@ -26,7 +26,7 @@
       </q-item-section>
     </q-item>
 
-    <q-item v-ripple clickable to="/products">
+    <q-item v-ripple clickable :to="{name: 'product_list'}">
       <q-item-section avatar>
         <q-icon name="category"/>
       </q-item-section>
@@ -36,7 +36,7 @@
       </q-item-section>
     </q-item>
 
-    <q-item v-ripple clickable to="/inventory">
+    <q-item v-ripple clickable :to="{name: 'inventory_list'}">
       <q-item-section avatar>
         <q-icon name="store"/>
       </q-item-section>
@@ -46,7 +46,7 @@
       </q-item-section>
     </q-item>
 
-    <q-item v-ripple clickable to="/locations">
+    <q-item v-ripple clickable :to="{name: 'location_list'}">
       <q-item-section avatar>
         <q-icon name="place"/>
       </q-item-section>
@@ -56,7 +56,7 @@
       </q-item-section>
     </q-item>
 
-    <q-item v-ripple clickable to="/purchases">
+    <q-item v-ripple clickable :to="{name: 'purchase_list'}">
       <q-item-section avatar>
         <q-icon name="shop"/>
       </q-item-section>
@@ -66,7 +66,7 @@
       </q-item-section>
     </q-item>
 
-    <q-item v-ripple clickable to="/customers">
+    <q-item v-ripple clickable :to="{name: 'customer_list'}">
       <q-item-section avatar>
         <q-icon name="people"/>
       </q-item-section>
@@ -76,7 +76,7 @@
       </q-item-section>
     </q-item>
 
-    <q-item v-ripple clickable to="/sales">
+    <q-item v-ripple clickable :to="{name: 'sale_list'}">
       <q-item-section avatar>
         <q-icon name="shopping_cart"/>
       </q-item-section>
@@ -86,7 +86,7 @@
       </q-item-section>
     </q-item>
 
-    <q-item v-ripple clickable exact to="/help">
+    <q-item v-ripple clickable exact :to="{name: 'help'}">
       <q-item-section avatar>
         <q-icon name="help"/>
       </q-item-section>
