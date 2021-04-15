@@ -118,5 +118,14 @@ export default {
   &__sticky-button {
     border: 1px solid #cccccc;
   }
+
+  &__product-card-content {
+    width: 100%;
+  }
+
+  &__product-card-image {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 </style>

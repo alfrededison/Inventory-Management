@@ -75,5 +75,8 @@
   },
   "category": {
     "name": "Category name"
+  },
+  "form": {
+    "remark": "Remark"
   }
 }

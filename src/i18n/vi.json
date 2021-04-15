@@ -75,5 +75,8 @@
   },
   "category": {
     "name": "Tên phân loại"
+  },
+  "form": {
+    "remark": "Ghi chú"
   }
 }
