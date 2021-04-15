@@ -54,7 +54,7 @@
                   <q-item-section>{{ $t('inventory.addRecord') }}</q-item-section>
                 </q-item>
                 <q-separator/>
-                <q-item clickable v-close-popup class="text-negative">
+                <q-item clickable v-close-popup class="text-negative" @click="deleteItem">
                   <q-icon name="delete" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('toolbar.delete') }}</q-item-section>
                 </q-item>
@@ -70,7 +70,8 @@
           <span>{{ $t('inventory.list') }}</span>
         </q-toolbar-title>
         <q-space/>
-        <q-btn icon="add" dense flat class="IM__sticky-button" size="12px" color="primary" :to="{name: 'inventory_add'}">
+        <q-btn icon="add" dense flat class="IM__sticky-button" size="12px" color="primary"
+               :to="{name: 'inventory_add'}">
           <span v-if="$q.screen.gt.xs">{{ $t('inventory.add') }}</span>
         </q-btn>
         <q-btn icon="more_vert" dense flat class="IM__sticky-button q-ml-md" size="12px">
@@ -228,6 +229,25 @@ export default {
   methods: {
     inventoryAlert(row) {
       return row.quantity === 0 ? 'negative' : row.reorderPoint > row.quantity ? 'warning' : 'positive';
+    },
+
+    deleteItem() {
+      this.$q.dialog({
+        parent: this,
+        color: 'negative',
+        title: this.$t('dialog.confirmDelete'),
+        cancel: this.$t('actions.no'),
+        ok: {
+          color: 'negative',
+          label: this.$t('actions.yes'),
+        },
+        message: this.$t('inventory.confirmDelete'),
+      }).onOk(() => {
+        this.$q.notify({
+          color: 'positive',
+          message: this.$t('notification.deleteSuccess'),
+        });
+      });
     },
 
     deleteRows() {

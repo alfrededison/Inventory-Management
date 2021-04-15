@@ -41,7 +41,7 @@
                   <q-item-section>{{ $t('toolbar.history') }}</q-item-section>
                 </q-item>
                 <q-separator/>
-                <q-item clickable v-close-popup class="text-negative">
+                <q-item clickable v-close-popup class="text-negative" @click="deleteItem">
                   <q-icon name="delete" size="sm" class="q-mr-sm"/>
                   <q-item-section>{{ $t('toolbar.delete') }}</q-item-section>
                 </q-item>
@@ -181,6 +181,24 @@ export default {
   methods: {
     productAlert(row) {
       return row.inventory.location === 0 || row.reorderPoint > (row.inventory.quantity / row.inventory.location);
+    },
+
+    deleteItem() {
+      this.$q.dialog({
+        parent: this,
+        title: this.$t('dialog.confirmDelete'),
+        cancel: this.$t('actions.no'),
+        ok: {
+          color: 'negative',
+          label: this.$t('actions.yes'),
+        },
+        message: this.$t('products.confirmDelete'),
+      }).onOk(() => {
+        this.$q.notify({
+          color: 'positive',
+          message: this.$t('notification.deleteSuccess'),
+        });
+      });
     },
 
     deleteRows() {

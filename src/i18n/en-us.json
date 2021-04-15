@@ -30,6 +30,7 @@
   "products": {
     "add": "Add product",
     "category": "Category",
+    "confirmDelete": "Product will be deleted",
     "description": "Description",
     "edit": "Edit product {name}",
     "image": "Image",
@@ -47,12 +48,15 @@
     "cancel": "Cancel",
     "clickToAddOption": "Click Plus(+) button to add more option",
     "deleteSelected": "Delete selected",
+    "no": "No",
     "reset": "Reset",
-    "save": "Save"
+    "save": "Save",
+    "yes": "Yes"
   },
   "inventory": {
     "add": "Add inventory location",
     "addRecord": "Add inventory record",
+    "confirmDelete": "Inventory item will be deleted.",
     "lastTransaction": "Last transaction",
     "list": "Inventory List",
     "location": "Location",
@@ -61,5 +65,11 @@
     "transactionHistory": "Transaction history",
     "transfer": "Location transfer",
     "updateQuantity": "Update quantity"
+  },
+  "dialog": {
+    "confirmDelete": "Are you sure to DELETE?"
+  },
+  "notification": {
+    "deleteSuccess": "Item deleted."
   }
 }

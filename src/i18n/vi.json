@@ -30,6 +30,7 @@
   "products": {
     "add": "Thêm sản phẩm",
     "category": "Phân loại",
+    "confirmDelete": "Sản phẩm sẽ bị xóa",
     "description": "Mô tả",
     "edit": "Chỉnh sửa sản phẩm {name}",
     "image": "Ảnh",
@@ -47,12 +48,15 @@
     "cancel": "Hủy bỏ",
     "clickToAddOption": "Bấm dấu cộng (+) để thêm lựa chọn",
     "deleteSelected": "Xóa các mục được chọn",
+    "no": "Không",
     "reset": "Reset",
-    "save": "Lưu lại"
+    "save": "Lưu lại",
+    "yes": "Có"
   },
   "inventory": {
     "add": "Thêm kho hàng",
     "addRecord": "Thêm bản ghi kho hàng",
+    "confirmDelete": "Kho sản phẩm sẽ bị xóa",
     "lastTransaction": "Giao dịch cuối",
     "list": "Danh sách kho hàng",
     "location": "Địa điểm",
@@ -61,5 +65,11 @@
     "transactionHistory": "Lịch sử kho hàng",
     "transfer": "Luân chuyển kho hàng",
     "updateQuantity": "Cập nhật số lượng"
+  },
+  "dialog": {
+    "confirmDelete": "Bạn có chắc muốn XÓA?"
+  },
+  "notification": {
+    "deleteSuccess": "Xóa thành công."
   }
 }
