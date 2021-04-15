@@ -34,6 +34,7 @@
     "description": "Mô tả",
     "edit": "Chỉnh sửa sản phẩm {name}",
     "image": "Ảnh",
+    "inventoryView": "Tìm kho hàng",
     "list": "Danh mục sản phẩm",
     "name": "Tên sản phẩm",
     "price": "Giá nhập",

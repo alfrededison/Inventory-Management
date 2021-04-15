@@ -34,6 +34,7 @@
     "description": "Description",
     "edit": "Edit product {name}",
     "image": "Image",
+    "inventoryView": "Find inventory",
     "list": "Product list",
     "name": "Product Name",
     "price": "Price",
