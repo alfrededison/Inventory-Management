@@ -51,7 +51,8 @@
     "no": "No",
     "reset": "Reset",
     "save": "Save",
-    "yes": "Yes"
+    "yes": "Yes",
+    "close": "Close"
   },
   "inventory": {
     "add": "Add inventory location",
@@ -71,5 +72,8 @@
   },
   "notification": {
     "deleteSuccess": "Item deleted."
+  },
+  "category": {
+    "name": "Category name"
   }
 }

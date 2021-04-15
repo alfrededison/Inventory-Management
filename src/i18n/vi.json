@@ -51,7 +51,8 @@
     "no": "Không",
     "reset": "Reset",
     "save": "Lưu lại",
-    "yes": "Có"
+    "yes": "Có",
+    "close": "Đóng"
   },
   "inventory": {
     "add": "Thêm kho hàng",
@@ -71,5 +72,8 @@
   },
   "notification": {
     "deleteSuccess": "Xóa thành công."
+  },
+  "category": {
+    "name": "Tên phân loại"
   }
 }

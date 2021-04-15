@@ -33,7 +33,7 @@
       </template>
 
       <template v-slot:after>
-        <q-btn round dense flat icon="add_circle"/>
+        <q-btn round dense flat icon="add_circle" @click="addCategory"/>
       </template>
     </q-select>
     <q-input
@@ -75,6 +75,8 @@
 </template>
 
 <script>
+import CategoryDialog from 'components/CategoryDialog';
+
 export default {
   name: 'Product',
   props: {
@@ -100,7 +102,13 @@ export default {
     },
     onReset() {
       this.product = {};
-    }
+    },
+    addCategory() {
+      this.$q.dialog({
+        parent: this,
+        component: CategoryDialog,
+      });
+    },
   }
 };
 </script>
