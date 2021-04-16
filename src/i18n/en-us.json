@@ -82,5 +82,15 @@
   },
   "form": {
     "remark": "Remark"
+  },
+  "sales": {
+    "value": "Value (USD)",
+    "numberOfOrders": "Number of orders"
+  },
+  "statistics": {
+    "topSeller": "Top {number} Sellers",
+    "byProduct": "by Products",
+    "byLocation": "by Locations",
+    "topSales": "Top {number} Sales"
   }
 }

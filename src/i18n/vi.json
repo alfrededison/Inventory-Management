@@ -82,5 +82,15 @@
   },
   "form": {
     "remark": "Ghi chú"
+  },
+  "sales": {
+    "value": "Thành tiền (VND)",
+    "numberOfOrders": "Số đơn hàng"
+  },
+  "statistics": {
+    "topSeller": "Tốp {number} mặt hàng",
+    "byProduct": "theo Sản phẩm",
+    "byLocation": "theo Địa điểm",
+    "topSales": "Tốp {number} bán hàng"
   }
 }
