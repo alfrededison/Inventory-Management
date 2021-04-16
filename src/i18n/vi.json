@@ -66,7 +66,10 @@
     "transaction": "Xuất/Nhập kho",
     "transactionHistory": "Lịch sử kho hàng",
     "transfer": "Luân chuyển kho hàng",
-    "updateQuantity": "Cập nhật số lượng"
+    "updateQuantity": "Cập nhật số lượng",
+    "available": "Sẵn có",
+    "import": "Nhập kho",
+    "export": "Xuất kho"
   },
   "dialog": {
     "confirmDelete": "Bạn có chắc muốn XÓA?"
