@@ -95,25 +95,6 @@ export default {
 
       selected: [],
 
-      columns: [
-        {name: 'image', field: 'image', label: this.$t('products.image'), align: 'center'},
-        {name: 'name', field: 'name', label: this.$t('products.name'), align: 'left', sortable: true},
-        {name: 'sku', field: 'sku', label: this.$t('products.sku'), align: 'left', sortable: true},
-        {name: 'category', field: 'category', label: this.$t('products.category'), sortable: true},
-        {
-          name: 'inventory',
-          field: 'inventory',
-          format: val => this.$tc('products.quantityLocation', val.location, {
-            quantity: val.quantity,
-            location: val.location
-          }),
-          label: this.$t('products.quantity'),
-          sortable: true,
-          sort: (a, b) => (a.quantity - b.quantity) || (a.location - b.location),
-        },
-        {name: 'actions', label: this.$t('actions.actions')},
-      ],
-
       rows: [
         {
           name: 'Frozen Yogurt', sku: 'FOOD159', category: 'Food',
@@ -177,6 +158,28 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    columns() {
+      return [
+        {name: 'image', field: 'image', label: this.$t('products.image'), align: 'center'},
+        {name: 'name', field: 'name', label: this.$t('products.name'), align: 'left', sortable: true},
+        {name: 'sku', field: 'sku', label: this.$t('products.sku'), align: 'left', sortable: true},
+        {name: 'category', field: 'category', label: this.$t('products.category'), sortable: true},
+        {
+          name: 'inventory',
+          field: 'inventory',
+          format: val => this.$tc('products.quantityLocation', val.location, {
+            quantity: val.quantity,
+            location: val.location
+          }),
+          label: this.$t('products.quantity'),
+          sortable: true,
+          sort: (a, b) => (a.quantity - b.quantity) || (a.location - b.location),
+        },
+        {name: 'actions', label: this.$t('actions.actions')},
+      ];
+    },
   },
   methods: {
     productAlert(row) {

@@ -61,19 +61,22 @@ export default {
 
       selected: [],
 
-      columns: [
-        {name: 'name', field: 'name', label: this.$t('locations.name'), align: 'left', sortable: true},
-        {name: 'description', field: 'description', label: this.$t('locations.description'), align: 'left'},
-        {name: 'status', field: 'status', label: this.$t('locations.status'), sortable: true},
-        {name: 'actions', label: this.$t('actions.actions')},
-      ],
-
       rows: [
         {name: 'Hanoi', description: 'Kho Hà Nội', status: true},
         {name: 'Saigon', description: 'Kho Hồ Chí Minh', status: true},
         {name: 'Danang', description: 'Kho Đà Nẵng', status: false},
       ]
     };
+  },
+  computed: {
+    columns() {
+      return [
+        {name: 'name', field: 'name', label: this.$t('locations.name'), align: 'left', sortable: true},
+        {name: 'description', field: 'description', label: this.$t('locations.description'), align: 'left'},
+        {name: 'status', field: 'status', label: this.$t('locations.status'), sortable: true},
+        {name: 'actions', label: this.$t('actions.actions')},
+      ];
+    },
   },
 };
 </script>

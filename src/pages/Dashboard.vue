@@ -36,7 +36,7 @@
         <q-separator/>
         <q-card-section>
           <q-table
-            :columns="topProducts.columns"
+            :columns="topProductsColumns"
             :data="topProducts.rows"
             class="q-pa-md"
             dense
@@ -53,7 +53,7 @@
         <q-separator/>
         <q-card-section>
           <q-table
-            :columns="topSales.columns"
+            :columns="topSalesColumns"
             :data="topSales.rows"
             class="q-pa-md"
             dense
@@ -83,30 +83,36 @@ export default {
   data() {
     return {
       topProducts: {
-        columns: [
-          {name: 'index', field: 'index', label: '#', align: 'left'},
-          {name: 'name', field: 'name', label: this.$t('products.name'), align: 'left'},
-          {name: 'quantity', field: 'quantity', label: this.$t('products.quantity'), align: 'left'},
-          {name: 'value', field: 'value', label: this.$t('sales.value')},
-        ],
         rows: products.map((row, index) => {
           row.index = index + 1;
           return row;
         }),
       },
       topSales: {
-        columns: [
-          {name: 'index', field: 'index', label: '#', align: 'left'},
-          {name: 'name', field: 'name', label: this.$t('locations.name'), align: 'left'},
-          {name: 'orders', field: 'orders', label: this.$t('sales.numberOfOrders'), align: 'left'},
-        ],
         rows: cities.map((row, index) => {
           row.index = index + 1;
           return row;
         }),
       },
     }
-  }
+  },
+  computed: {
+    topProductsColumns() {
+      return [
+        {name: 'index', field: 'index', label: '#', align: 'left'},
+        {name: 'name', field: 'name', label: this.$t('products.name'), align: 'left'},
+        {name: 'quantity', field: 'quantity', label: this.$t('products.quantity'), align: 'left'},
+        {name: 'value', field: 'value', label: this.$t('sales.value')},
+      ];
+    },
+    topSalesColumns() {
+      return [
+        {name: 'index', field: 'index', label: '#', align: 'left'},
+        {name: 'name', field: 'name', label: this.$t('locations.name'), align: 'left'},
+        {name: 'orders', field: 'orders', label: this.$t('sales.numberOfOrders'), align: 'left'},
+      ];
+    }
+  },
 };
 </script>
 
