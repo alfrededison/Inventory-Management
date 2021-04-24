@@ -70,10 +70,6 @@
           <span>{{ $t('inventory.list') }}</span>
         </q-toolbar-title>
         <q-space/>
-        <q-btn icon="add" dense flat class="IM__sticky-button" size="12px" color="primary"
-               :to="{name: 'inventory_add'}">
-          <span v-if="$q.screen.gt.xs">{{ $t('inventory.add') }}</span>
-        </q-btn>
         <q-btn icon="more_vert" dense flat class="IM__sticky-button q-ml-md" size="12px">
           <q-tooltip anchor="top left" self="bottom middle">{{ $t('toolbar.more') }}</q-tooltip>
           <q-menu anchor="bottom right" self="top right">

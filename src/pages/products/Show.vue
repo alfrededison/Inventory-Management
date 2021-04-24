@@ -26,7 +26,7 @@
             <p class="q-pt-md">{{ product.description }}</p>
           </div>
           <q-card-actions class="q-px-none">
-            <q-btn color="primary" :label="$t('products.inventoryView')" :to="{name: 'inventory_list'}"/>
+            <q-btn icon="add" color="primary" :label="$t('inventory.add')" :to="{name: 'inventory_add'}"/>
             <q-space/>
             <q-btn color="secondary" :label="$t('toolbar.edit')" :to="{name: 'product_edit'}"/>
             <q-btn color="negative" :label="$t('toolbar.delete')"/>
