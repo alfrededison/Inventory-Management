@@ -1,7 +1,56 @@
 {
-  "title": "Inventory Management",
+  "actions": {
+    "actions": "Actions",
+    "cancel": "Cancel",
+    "clickToAddOption": "Click Plus(+) button to add more option",
+    "close": "Close",
+    "deleteSelected": "Delete selected",
+    "no": "No",
+    "reset": "Reset",
+    "save": "Save",
+    "yes": "Yes"
+  },
+  "category": {
+    "name": "Category name"
+  },
   "defaults": {
     "admin": "Administrator"
+  },
+  "dialog": {
+    "confirmDelete": "Are you sure to DELETE?"
+  },
+  "drawer": {
+    "language": "Language"
+  },
+  "form": {
+    "remark": "Remark"
+  },
+  "inventory": {
+    "add": "Add inventory location",
+    "addRecord": "Add inventory record",
+    "available": "Available",
+    "confirmDelete": "Inventory item will be deleted.",
+    "export": "Export",
+    "import": "Import",
+    "lastTransaction": "Last transaction",
+    "list": "Inventory List",
+    "location": "Location",
+    "productView": "Product detail",
+    "transaction": "Issue/Receive",
+    "transactionHistory": "Transaction history",
+    "transfer": "Location transfer",
+    "updateQuantity": "Update quantity"
+  },
+  "locations": {
+    "add": "New location",
+    "description": "Description",
+    "edit": "Edit location",
+    "list": "Locations",
+    "name": "Name",
+    "status": "Status"
+  },
+  "notification": {
+    "deleteSuccess": "Item deleted."
   },
   "pages": {
     "customers": "Customers",
@@ -12,20 +61,6 @@
     "products": "Products",
     "purchases": "Purchases",
     "sales": "Sales"
-  },
-  "drawer": {
-    "language": "Language"
-  },
-  "toolbar": {
-    "delete": "Delete",
-    "detail": "Detail",
-    "edit": "Edit",
-    "exportExcel": "Export to Excel file",
-    "history": "History",
-    "importExcel": "Import from Excel file",
-    "more": "More menu",
-    "notification": "Notification",
-    "search": "Search"
   },
   "products": {
     "add": "Add product",
@@ -44,65 +79,30 @@
     "salePrice": "Sale price",
     "sku": "SKU"
   },
-  "actions": {
-    "actions": "Actions",
-    "cancel": "Cancel",
-    "clickToAddOption": "Click Plus(+) button to add more option",
-    "deleteSelected": "Delete selected",
-    "no": "No",
-    "reset": "Reset",
-    "save": "Save",
-    "yes": "Yes",
-    "close": "Close"
-  },
-  "inventory": {
-    "add": "Add inventory location",
-    "addRecord": "Add inventory record",
-    "confirmDelete": "Inventory item will be deleted.",
-    "lastTransaction": "Last transaction",
-    "list": "Inventory List",
-    "location": "Location",
-    "productView": "Product detail",
-    "transaction": "Issue/Receive",
-    "transactionHistory": "Transaction history",
-    "transfer": "Location transfer",
-    "updateQuantity": "Update quantity",
-    "available": "Available",
-    "import": "Import",
-    "export": "Export"
-  },
-  "dialog": {
-    "confirmDelete": "Are you sure to DELETE?"
-  },
-  "notification": {
-    "deleteSuccess": "Item deleted."
-  },
-  "category": {
-    "name": "Category name"
-  },
-  "form": {
-    "remark": "Remark"
-  },
   "sales": {
-    "value": "Value (USD)",
-    "numberOfOrders": "Number of orders"
-  },
-  "locations": {
-    "name": "Name",
-    "list": "Locations",
-    "add": "New location",
-    "description": "Description",
-    "status": "Status",
-    "edit": "Edit location"
-  },
-  "status": {
-    "enabled": "Enabled",
-    "disabled": "Disabled"
+    "numberOfOrders": "Number of orders",
+    "value": "Value (USD)"
   },
   "statistics": {
-    "topSeller": "Top {number} Sellers",
-    "byProduct": "by Products",
     "byLocation": "by Locations",
-    "topSales": "Top {number} Sales"
+    "byProduct": "by Products",
+    "topSales": "Top {number} Sales",
+    "topSeller": "Top {number} Sellers"
+  },
+  "status": {
+    "disabled": "Disabled",
+    "enabled": "Enabled"
+  },
+  "title": "Inventory Management",
+  "toolbar": {
+    "delete": "Delete",
+    "detail": "Detail",
+    "edit": "Edit",
+    "exportExcel": "Export to Excel file",
+    "history": "History",
+    "importExcel": "Import from Excel file",
+    "more": "More menu",
+    "notification": "Notification",
+    "search": "Search"
   }
 }

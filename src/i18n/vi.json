@@ -1,7 +1,56 @@
 {
-  "title": "Quản Lý Kho",
+  "actions": {
+    "actions": "Thao tác",
+    "cancel": "Hủy bỏ",
+    "clickToAddOption": "Bấm dấu cộng (+) để thêm lựa chọn",
+    "close": "Đóng",
+    "deleteSelected": "Xóa các mục được chọn",
+    "no": "Không",
+    "reset": "Reset",
+    "save": "Lưu lại",
+    "yes": "Có"
+  },
+  "category": {
+    "name": "Tên phân loại"
+  },
   "defaults": {
     "admin": "Quản trị viên"
+  },
+  "dialog": {
+    "confirmDelete": "Bạn có chắc muốn XÓA?"
+  },
+  "drawer": {
+    "language": "Ngôn ngữ"
+  },
+  "form": {
+    "remark": "Ghi chú"
+  },
+  "inventory": {
+    "add": "Thêm kho hàng",
+    "addRecord": "Thêm bản ghi kho hàng",
+    "available": "Sẵn có",
+    "confirmDelete": "Kho sản phẩm sẽ bị xóa",
+    "export": "Xuất kho",
+    "import": "Nhập kho",
+    "lastTransaction": "Giao dịch cuối",
+    "list": "Danh sách kho hàng",
+    "location": "Địa điểm",
+    "productView": "Xem sản phẩm",
+    "transaction": "Xuất/Nhập kho",
+    "transactionHistory": "Lịch sử kho hàng",
+    "transfer": "Luân chuyển kho hàng",
+    "updateQuantity": "Cập nhật số lượng"
+  },
+  "locations": {
+    "add": "Thêm địa điểm",
+    "description": "Mô tả",
+    "edit": "Chỉnh sửa địa điểm",
+    "list": "Danh sách địa điểm",
+    "name": "Tên",
+    "status": "Trạng thái"
+  },
+  "notification": {
+    "deleteSuccess": "Xóa thành công."
   },
   "pages": {
     "customers": "Khách hàng",
@@ -12,20 +61,6 @@
     "products": "Sản phẩm",
     "purchases": "Mua hàng",
     "sales": "Bán hàng"
-  },
-  "drawer": {
-    "language": "Ngôn ngữ"
-  },
-  "toolbar": {
-    "delete": "Xóa",
-    "detail": "Chi tiết",
-    "edit": "Chỉnh sửa",
-    "exportExcel": "Xuất ra file Excel",
-    "history": "Lịch sử",
-    "importExcel": "Nhập dữ liệu từ file Excel",
-    "more": "Menu mở rộng",
-    "notification": "Thông báo",
-    "search": "Tìm kiếm"
   },
   "products": {
     "add": "Thêm sản phẩm",
@@ -44,65 +79,30 @@
     "salePrice": "Giá bán",
     "sku": "Mã sản phẩm"
   },
-  "actions": {
-    "actions": "Thao tác",
-    "cancel": "Hủy bỏ",
-    "clickToAddOption": "Bấm dấu cộng (+) để thêm lựa chọn",
-    "deleteSelected": "Xóa các mục được chọn",
-    "no": "Không",
-    "reset": "Reset",
-    "save": "Lưu lại",
-    "yes": "Có",
-    "close": "Đóng"
-  },
-  "inventory": {
-    "add": "Thêm kho hàng",
-    "addRecord": "Thêm bản ghi kho hàng",
-    "confirmDelete": "Kho sản phẩm sẽ bị xóa",
-    "lastTransaction": "Giao dịch cuối",
-    "list": "Danh sách kho hàng",
-    "location": "Địa điểm",
-    "productView": "Xem sản phẩm",
-    "transaction": "Xuất/Nhập kho",
-    "transactionHistory": "Lịch sử kho hàng",
-    "transfer": "Luân chuyển kho hàng",
-    "updateQuantity": "Cập nhật số lượng",
-    "available": "Sẵn có",
-    "import": "Nhập kho",
-    "export": "Xuất kho"
-  },
-  "dialog": {
-    "confirmDelete": "Bạn có chắc muốn XÓA?"
-  },
-  "notification": {
-    "deleteSuccess": "Xóa thành công."
-  },
-  "category": {
-    "name": "Tên phân loại"
-  },
-  "form": {
-    "remark": "Ghi chú"
-  },
   "sales": {
-    "value": "Thành tiền (VND)",
-    "numberOfOrders": "Số đơn hàng"
-  },
-  "locations": {
-    "name": "Tên",
-    "list": "Danh sách địa điểm",
-    "add": "Thêm địa điểm",
-    "description": "Mô tả",
-    "status": "Trạng thái",
-    "edit": "Chỉnh sửa địa điểm"
-  },
-  "status": {
-    "enabled": "Đang hoạt động",
-    "disabled": "Dừng hoạt động"
+    "numberOfOrders": "Số đơn hàng",
+    "value": "Thành tiền (VND)"
   },
   "statistics": {
-    "topSeller": "Tốp {number} mặt hàng",
-    "byProduct": "theo Sản phẩm",
     "byLocation": "theo Địa điểm",
-    "topSales": "Tốp {number} bán hàng"
+    "byProduct": "theo Sản phẩm",
+    "topSales": "Tốp {number} bán hàng",
+    "topSeller": "Tốp {number} mặt hàng"
+  },
+  "status": {
+    "disabled": "Dừng hoạt động",
+    "enabled": "Đang hoạt động"
+  },
+  "title": "Quản Lý Kho",
+  "toolbar": {
+    "delete": "Xóa",
+    "detail": "Chi tiết",
+    "edit": "Chỉnh sửa",
+    "exportExcel": "Xuất ra file Excel",
+    "history": "Lịch sử",
+    "importExcel": "Nhập dữ liệu từ file Excel",
+    "more": "Menu mở rộng",
+    "notification": "Thông báo",
+    "search": "Tìm kiếm"
   }
 }
