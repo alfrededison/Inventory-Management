@@ -92,7 +92,8 @@
     "list": "Danh sách địa điểm",
     "add": "Thêm địa điểm",
     "description": "Mô tả",
-    "status": "Trạng thái"
+    "status": "Trạng thái",
+    "edit": "Chỉnh sửa địa điểm"
   },
   "status": {
     "enabled": "Đang hoạt động",

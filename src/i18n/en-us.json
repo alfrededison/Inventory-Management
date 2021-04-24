@@ -92,7 +92,8 @@
     "list": "Locations",
     "add": "New location",
     "description": "Description",
-    "status": "Status"
+    "status": "Status",
+    "edit": "Edit location"
   },
   "status": {
     "enabled": "Enabled",
