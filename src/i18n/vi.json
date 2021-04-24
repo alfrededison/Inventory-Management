@@ -39,6 +39,7 @@
     "transaction": "Xuất/Nhập kho",
     "transactionHistory": "Lịch sử kho hàng",
     "transfer": "Luân chuyển kho hàng",
+    "transferTo": "Chuyển đến",
     "updateQuantity": "Cập nhật số lượng"
   },
   "locations": {

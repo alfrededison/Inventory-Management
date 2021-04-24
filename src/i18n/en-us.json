@@ -39,6 +39,7 @@
     "transaction": "Issue/Receive",
     "transactionHistory": "Transaction history",
     "transfer": "Location transfer",
+    "transferTo": "To location",
     "updateQuantity": "Update quantity"
   },
   "locations": {
