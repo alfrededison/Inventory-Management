@@ -87,6 +87,17 @@
     "value": "Value (USD)",
     "numberOfOrders": "Number of orders"
   },
+  "locations": {
+    "name": "Name",
+    "list": "Locations",
+    "add": "New location",
+    "description": "Description",
+    "status": "Status"
+  },
+  "status": {
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  },
   "statistics": {
     "topSeller": "Top {number} Sellers",
     "byProduct": "by Products",
