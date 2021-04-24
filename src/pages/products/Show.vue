@@ -34,11 +34,15 @@
         </q-card-section>
       </q-card-section>
     </q-card>
+    <Inventory :rows="rows" :show-product="false"/>
   </q-page>
 </template>
 
 <script>
+import Inventory from 'components/Inventory';
+
 export default {
+  components: {Inventory},
   data() {
     return {
       product: {
@@ -56,6 +60,29 @@ export default {
         quantity: 20,
         remark: '',
       },
+      rows: [
+        {
+          id: 'FOOD159_Hanoi',
+          name: 'Frozen Yogurt', sku: 'FOOD159', location: 'Hanoi',
+          image: 'https://picsum.photos/200/300',
+          quantity: 4, reorderPoint: 10,
+          lastTransaction: '2021-04-13T08:53:33.792Z'
+        },
+        {
+          id: 'FOOD237_Hanoi',
+          name: 'Ice cream sandwich', sku: 'FOOD237', location: 'Hanoi',
+          image: 'https://picsum.photos/300/300',
+          quantity: 37, reorderPoint: 10,
+          lastTransaction: '2021-04-13T08:53:33.792Z'
+        },
+        {
+          id: 'FOOD262_Hanoi',
+          name: 'Eclair', sku: 'FOOD262', location: 'Hanoi',
+          image: 'https://picsum.photos/400/300',
+          quantity: 2, reorderPoint: 10,
+          lastTransaction: '2021-04-13T08:53:33.792Z'
+        },
+      ],
     };
   },
 };
