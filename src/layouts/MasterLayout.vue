@@ -33,6 +33,66 @@
               {{ notificationCount }}
             </q-badge>
             <q-tooltip>{{ $t('toolbar.notification') }}</q-tooltip>
+            <q-menu anchor="bottom right" self="top right">
+              <q-list bordered padding style="min-width: 200px">
+                <q-item-label header>{{ $t('toolbar.notification') }}</q-item-label>
+                <q-item clickable v-close-popup>
+                  <q-item-section top avatar>
+                    <q-avatar color="primary" text-color="white" icon="campaign"/>
+                  </q-item-section>
+
+                  <q-item-section>
+                    <q-item-label>This content for important system event</q-item-label>
+                    <q-item-label caption lines="2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscit elit.
+                    </q-item-label>
+                  </q-item-section>
+
+                  <q-item-section side top>
+                    <q-item-label caption>5 min ago</q-item-label>
+                    <q-icon name="notification_important" color="negative"/>
+                  </q-item-section>
+                </q-item>
+                <q-separator spaced inset="item"/>
+                <q-item clickable v-close-popup>
+                  <q-item-section top avatar>
+                    <q-avatar color="primary" text-color="white" icon="campaign"/>
+                  </q-item-section>
+
+                  <q-item-section>
+                    <q-item-label>This content for information system event</q-item-label>
+                    <q-item-label caption lines="2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscit elit.
+                    </q-item-label>
+                  </q-item-section>
+
+                  <q-item-section side top>
+                    <q-item-label caption>15 min ago</q-item-label>
+                    <q-icon name="notifications_none" color="info"/>
+                  </q-item-section>
+                </q-item>
+                <q-separator spaced inset="item"/>
+                <q-item clickable v-close-popup>
+                  <q-item-section top avatar>
+                    <q-avatar>
+                      <q-img class="IM__toolbar-avatar" src="~assets/icon.png"/>
+                    </q-avatar>
+                  </q-item-section>
+
+                  <q-item-section>
+                    <q-item-label>This content for user event</q-item-label>
+                    <q-item-label caption lines="2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscit elit.
+                    </q-item-label>
+                  </q-item-section>
+
+                  <q-item-section side top>
+                    <q-item-label caption>15 min ago</q-item-label>
+                    <q-icon name="star" color="warning"/>
+                  </q-item-section>
+                </q-item>
+              </q-list>
+            </q-menu>
           </q-btn>
 
           <q-btn round flat>
