@@ -49,7 +49,7 @@
 
 <script>
 import {date} from 'quasar';
-import Menu from 'components/menu';
+import Menu from 'components/Menu';
 
 export default {
   name: 'HomeLayout',
