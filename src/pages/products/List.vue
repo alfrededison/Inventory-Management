@@ -15,7 +15,7 @@
       </template>
       <template v-slot:body-cell-image="props">
         <q-td :props="props">
-          <q-img :src="props.row.image" spinner-color="primary" :ratio="1"/>
+          <q-img :src="props.value" spinner-color="primary" :ratio="1"/>
         </q-td>
       </template>
       <template v-slot:body-cell-inventory="props">
